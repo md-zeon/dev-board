@@ -17,6 +17,7 @@
     <style type="text/tailwindcss">
         @theme {
           --font-poppins: "Poppins", sans-serif;
+          --color-secondary: #F4F7FF;
           --color-accent: #3752FD;
           --color-text-primary: #00303C;
         }
@@ -24,7 +25,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body class="font-poppins bg-[#F4F7FF] min-h-screen">
+<body class="font-poppins bg-secondary min-h-screen">
     <header class="max-w-screen-2xl mx-auto py-6">
         <!-- Navbar Start -->
         <nav class="bg-white px-6 flex items-center justify-between rounded-2xl">
@@ -36,20 +37,66 @@
             <!-- navbar right -->
             <div class="flex items-center gap-10 py-4">
                 <!-- Checkbox -->
-                <div class="flex items-center rounded-3xl bg-[#F4F7FF] w-fit">
+                <div class="flex items-center rounded-3xl bg-secondary w-fit">
                     <img class="p-4" src="assets/checkbox.png" alt="checkbox">
                     <span class="text-3xl font-bold text-[#1E1E1E] pr-4">23</span>
                 </div>
                 <!-- Theme Change Button -->
-                <div class="grid place-items-center w-16 h-16 rounded-full bg-[#F4F7FF]">
+                <div class="grid place-items-center w-16 h-16 rounded-full bg-secondary">
                     <img class="cursor-pointer" src="assets/theme-btn.png" alt="">
                 </div>
             </div>
         </nav>
         <!-- Navbar End -->
     </header>
-    <main class="max-w-screen-2xl mx-auto">
+    <main class="max-w-screen-2xl mx-auto grid grid-cols-4 gap-6">
+        <!-- main section -->
+        <section class="col-span-3 bg-white p-6 rounded-2xl">
+            <!-- 3 Box -->
+            <div class="grid grid-cols-7 gap-6  ">
+                <!-- 1st Box -->
+                <div class="col-span-2 bg-secondary p-8 rounded-xl">
+                    <div class="flex items-center gap-4">
+                        <!-- checkbox -->
+                        <div class="w-16 h-16 rounded-full grid place-items-center bg-white">
+                            <img src="assets/checkbox.png" alt="checkbox">
+                        </div>
+                        <!-- Task Assigned  -->
+                        <div class="">
+                            <p class="text-text-primary font-medium">Task Assigned</p>
+                            <h3 class="text-3xl font-bold text-text-primary">0<span>6</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd Box -->
+                <div class="col-span-3 bg-linear-to-br from-accent via-[#6C7FFA] to-[#9BA8F8] rounded-xl py-6 px-12">
+                    <div class="flex items-center gap-4">
+                        <div class="">
+                            <img class="" src="assets/board.png" alt="board">
+                        </div>
+                        <h1 class="text-white font-medium text-2xl">Discover Something New Today!</h1>
+                    </div>
+                </div>
+                <!-- 3rd Box -->
+                <div class="col-span-2 bg-secondary flex items-center p-6 rounded-2xl">
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 rounded-full bg-white grid place-items-center">
+                            <img src="assets/calender.png" alt="">
+                        </div>
+                        <h2 class="text-xl text-text-primary">
+                            Wed ,<br>
+                            <span class="font-bold">
+                                Jul 28 2025 
+                            </span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sidebar -->
+        <aside class="col-span-1 bg-white">
 
+        </aside>
     </main>
 
     <!-- JavaScript Files -->
