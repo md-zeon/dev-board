@@ -18,14 +18,39 @@
         @theme {
           --font-poppins: "Poppins", sans-serif;
           --color-accent: #3752FD;
-          --color-text: #00303C;
+          --color-text-primary: #00303C;
         }
     </style>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body class="font-poppins">
-    
+<body class="font-poppins bg-[#F4F7FF] min-h-screen">
+    <header class="max-w-screen-2xl mx-auto py-6">
+        <!-- Navbar Start -->
+        <nav class="bg-white px-6 flex items-center justify-between rounded-2xl">
+            <!-- left logo -->
+            <div class="flex items-center gap-3">
+                <img src="assets/logo.png" alt="logo">
+                <h2 class="text-4xl">Dev<span class="font-bold text-text-primary">Board</span></h2>
+            </div>
+            <!-- navbar right -->
+            <div class="flex items-center gap-10 py-4">
+                <!-- Checkbox -->
+                <div class="flex items-center rounded-3xl bg-[#F4F7FF] w-fit">
+                    <img class="p-4" src="assets/checkbox.png" alt="checkbox">
+                    <span class="text-3xl font-bold text-[#1E1E1E] pr-4">23</span>
+                </div>
+                <!-- Theme Change Button -->
+                <div class="grid place-items-center w-16 h-16 rounded-full bg-[#F4F7FF]">
+                    <img class="cursor-pointer" src="assets/theme-btn.png" alt="">
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+    </header>
+    <main class="max-w-screen-2xl mx-auto">
+
+    </main>
 
     <!-- JavaScript Files -->
     <script src="scripts/script.js"></script>
