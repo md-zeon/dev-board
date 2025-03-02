@@ -49,7 +49,7 @@
         </nav>
         <!-- Navbar End -->
     </header>
-    <main class="max-w-screen-2xl mx-auto grid grid-cols-4 gap-6">
+    <main class="max-w-screen-2xl mx-auto grid grid-cols-4 gap-6 pb-6">
         <!-- main section -->
         <section class="col-span-3 bg-white p-6 rounded-2xl">
             <!-- 3 Tab Box -->
@@ -104,7 +104,7 @@
                     <div class="flex items-center justify-between pt-4">
                         <div class="text-text-primary">
                             <p class="text-sm opacity-70">Deadline</p>
-                            <h3 class="font-medium">21 March 2025</h3>
+                            <h3 class="font-medium">10 March 2025</h3>
                         </div>
                         <button class="btn btn-accent font-medium text-white rounded-lg complete-btn">Completed</button>
                     </div>
@@ -115,13 +115,13 @@
                     <button class="btn badge bg-white border-none text-text-primary">CloudSync</button>
                     <h2 class="card-title font-medium text-2xl text-text-primary">Add Dark Mode</h2>
                     <div class="bg-white p-4 rounded-xl">
-                        <p class="line-clamp-2 text-black opacity-50">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                        <p class="line-clamp-2 text-black opacity-50">Implement a dark mode toggle using localStorage to save user preferences. Adjust CSS variables dynamically for a smooth transition effect.</p>
                     </div>
                     <!-- Card Footer -->
                     <div class="flex items-center justify-between pt-4">
                         <div class="text-text-primary">
                             <p class="text-sm opacity-70">Deadline</p>
-                            <h3 class="font-medium">21 March 2025</h3>
+                            <h3 class="font-medium">15 March 2025</h3>
                         </div>
                         <button class="btn btn-accent font-medium text-white rounded-lg complete-btn">Completed</button>
                     </div>
@@ -132,13 +132,13 @@
                     <button class="btn badge bg-white border-none text-text-primary">SwiftPay</button>
                     <h2 class="card-title font-medium text-2xl text-text-primary">Optimize  Home page</h2>
                     <div class="bg-white p-4 rounded-xl">
-                        <p class="line-clamp-2 text-black opacity-50">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                        <p class="line-clamp-2 text-black opacity-50">Improve page load speed by optimizing images, lazy loading content, and reducing unused JavaScript to enhance user experience.</p>
                     </div>
                     <!-- Card Footer -->
                     <div class="flex items-center justify-between pt-4">
                         <div class="text-text-primary">
                             <p class="text-sm opacity-70">Deadline</p>
-                            <h3 class="font-medium">21 March 2025</h3>
+                            <h3 class="font-medium">18 March 2025</h3>
                         </div>
                         <button class="btn btn-accent font-medium text-white rounded-lg complete-btn">Completed</button>
                     </div>
@@ -149,7 +149,7 @@
                     <button class="btn badge bg-white border-none text-text-primary">Meta</button>
                     <h2 class="card-title font-medium text-2xl text-text-primary">Add new emoji 🤲</h2>
                     <div class="bg-white p-4 rounded-xl">
-                        <p class="line-clamp-2 text-black opacity-50">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                        <p class="line-clamp-2 text-black opacity-50">Extend emoji compatibility by updating Unicode support. Ensure correct rendering across all major browsers and mobile devices.</p>
                     </div>
                     <!-- Card Footer -->
                     <div class="flex items-center justify-between pt-4">
@@ -166,13 +166,13 @@
                     <button class="btn badge bg-white border-none text-text-primary">Google LLC</button>
                     <h2 class="card-title font-medium text-2xl text-text-primary">Integrate OpenAI API</h2>
                     <div class="bg-white p-4 rounded-xl">
-                        <p class="line-clamp-2 text-black opacity-50">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                        <p class="line-clamp-2 text-black opacity-50">Implement OpenAI's GPT API for smarter chatbot interactions. Ensure authentication, response handling, and rate limiting.</p>
                     </div>
                     <!-- Card Footer -->
                     <div class="flex items-center justify-between pt-4">
                         <div class="text-text-primary">
                             <p class="text-sm opacity-70">Deadline</p>
-                            <h3 class="font-medium">21 March 2025</h3>
+                            <h3 class="font-medium">25 March 2025</h3>
                         </div>
                         <button class="btn btn-accent font-medium text-white rounded-lg complete-btn">Completed</button>
                     </div>
@@ -183,13 +183,13 @@
                     <button class="btn badge bg-white border-none text-text-primary">Glassdoar</button>
                     <h2 class="card-title font-medium text-2xl text-text-primary">Improve Job searching </h2>
                     <div class="bg-white p-4 rounded-xl">
-                        <p class="line-clamp-2 text-black opacity-50">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                        <p class="line-clamp-2 text-black opacity-50">Enhance search results by refining filtering criteria and implementing AI-based job recommendations to boost user engagement.</p>
                     </div>
                     <!-- Card Footer -->
                     <div class="flex items-center justify-between pt-4">
                         <div class="text-text-primary">
                             <p class="text-sm opacity-70">Deadline</p>
-                            <h3 class="font-medium">21 March 2025</h3>
+                            <h3 class="font-medium">28 March 2025</h3>
                         </div>
                         <button class="btn btn-accent font-medium text-white rounded-lg complete-btn">Completed</button>
                     </div>
@@ -204,12 +204,13 @@
                     <img src="assets/activity.png" alt="activity">
                     <h2 class="text-xl font-medium text-text-primary">Activity Log</h2>
                 </div>
-                <button class="btn btn-accent text-white rounded-lg font-medium mx-auto block">Clear History</button>
+                <button id="clear-history-btn" class="btn btn-accent text-white rounded-lg font-medium mx-auto block">Clear History</button>
             </div>
             <hr class="border border-dashed border-accent/20">
             <!-- Activity Logs Container -->
             <div id="activity-logs-container" class="py-6 pr-4 pl-8 space-y-11">
                 <!-- I Added Using JS -->
+                <p id="empty-log" class="italic text-center opacity-50 hidden">Activity Log is Empty</p>
             </div>
         </aside>
     </main>
