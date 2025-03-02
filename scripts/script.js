@@ -43,3 +43,9 @@ for (const btn of completeButtons) {
         btn.setAttribute("disabled", true);
     });
 }
+
+const clearHistoryBtn = document.getElementById("clear-history-btn");
+
+clearHistoryBtn.addEventListener("click", function() {
+    activityLogsContainer.innerHTML = '';
+});
