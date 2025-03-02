@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevBoard</title>
+    <title>DevBoard - Blog</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <!-- Daisy UI + Tailwind CSS CDN -->
@@ -23,7 +23,7 @@
         }
     </style>
 </head>
-<body class="font-poppins bg-secondary min-h-screen">
+<body class="font-poppins bg-secondary min-h-screen px-4">
     <header class="max-w-screen-2xl mx-auto py-6">
         <!-- Navbar Start -->
         <nav class="bg-white px-6 flex items-center justify-between rounded-2xl">
@@ -39,9 +39,98 @@
         </nav>
         <!-- Navbar End -->
     </header>
-
-    <main>
-        
+    <main class="max-w-screen-2xl mx-auto pb-6">
+        <h1 class="text-center text-text-primary font-bold text-2xl">Blogs</h1>
+        <!-- Blogs Container -->
+        <div class="grid gap-6 pt-6">
+            <!-- Blog 1 -->
+            <div class="bg-white rounded-xl shadow-md">
+                <!-- Question -->
+                <div class="p-4">
+                    <h2 class="text-xl font-bold">Question-1: What Are The Different Ways To Select An Element In The DOM?</h2>
+                </div>
+                <hr class="border border-dashed opacity-30">
+                <!-- Answer -->
+                <div class="p-4">
+                    <p class="font-medium">
+                        There are several ways to select elements in the DOM using JavaScript:
+                        <br>
+                        We can use document.getElementById('id') to select a single element with a specific ID.
+                        <br>
+                        We can use document.getElementsByClassName('class') to get all elements with a specific class. it returns a html collection
+                        <br>
+                        We can also Use document.getElementsByTagName('tag') to select all elements with a specific tag name.
+                        <br>
+                        We use document.querySelector('selector') to select the first element that matches a CSS selector
+                        <br>
+                        We use document.querySelectorAll('selector') to select all elements that match a CSS selector. it returns a NodeList.
+                        <br>
+                    </p>
+                </div>
+            </div>
+            <!-- Blog 2 -->
+            <div class="bg-white rounded-xl shadow-md">
+                <!-- Question -->
+                <div class="p-4">
+                    <h2 class="text-xl font-bold">Question-2: What Is The Difference Between innerHTML, innerText And textContent?</h2>
+                </div>
+                <hr class="border border-dashed opacity-30">
+                <!-- Answer -->
+                <div class="p-4">
+                    <p class="font-medium">
+                        if you use innerHTML, it can include any HTML tags like div or span. It can also get or set the HTML content inside an element.
+                        <br>
+                        if you use innerText, it can get or set the text inside an element, but it can't do anything with the text that's not visible.
+                        <br>
+                        On the other hand, textContent gets or sets all the text inside an element, including hidden text and spacing. it can change text that's not visible.  It doesn't care about styling or visibility.
+                    </p>
+                </div>
+            </div>
+            <!-- Blog 3 -->
+            <div class="bg-white rounded-xl shadow-md">
+                <!-- Question -->
+                <div class="p-4">
+                    <h2 class="text-xl font-bold">Question-3: What Is Event Delegation In The DOM?</h2>
+                </div>
+                <hr class="border border-dashed opacity-30">
+                <!-- Answer -->
+                <div class="p-4">
+                    <p class="font-medium">
+                        Event delegation is a technique where you add a single event listener to a parent element instead of adding listeners to multiple child elements. This works because events "bubble up" from the child to the parent.
+                    </p>
+                </div>
+            </div>
+            <!-- Blog 4 -->
+            <div class="bg-white rounded-xl shadow-md">
+                <!-- Question -->
+                <div class="p-4">
+                    <h2 class="text-xl font-bold">Question-4: What Is Event Bubbling In The DOM?</h2>
+                </div>
+                <hr class="border border-dashed opacity-30">
+                <!-- Answer -->
+                <div class="p-4">
+                    <p class="font-medium">
+                        Event bubbling is when an event triggered on a child element. it "bubbles up" through its parent elements in the DOM tree.
+                        <br>
+                        What I mean is If you click a button inside a div, the click event will first trigger on the button, then on the div, and then on any other parent elements all the way up to the document.    
+                    </p>
+                </div>
+            </div>
+            <!-- Blog 5 -->
+            <div class="bg-white rounded-xl shadow-md">
+                <!-- Question -->
+                <div class="p-4">
+                    <h2 class="text-xl font-bold">Question-5: How Do You Create, Add and Remove Elements Using JavaScript?</h2>
+                </div>
+                <hr class="border border-dashed opacity-30">
+                <!-- Answer -->
+                <div class="p-4">
+                    <p class="font-medium">
+                        I Use document.createElement('tag') to create a new element, and use parentElement.appendChild(newElement) to add the new element and use parentElement.removeChild(childElement) to remove an element.
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
 
     <script src="scripts/blog.js"></script>
