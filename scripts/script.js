@@ -49,3 +49,7 @@ const clearHistoryBtn = document.getElementById("clear-history-btn");
 clearHistoryBtn.addEventListener("click", function() {
     activityLogsContainer.innerHTML = '';
 });
+
+document.getElementById("discover-something").addEventListener("click", function() {
+    window.location.href = "./blog.html";
+});
