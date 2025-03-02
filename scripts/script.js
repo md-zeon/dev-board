@@ -18,6 +18,7 @@ dateToday.innerHTML = `
 `;
 
 const completeButtons = document.getElementsByClassName("complete-btn");
+const activityLogsContainer = document.getElementById("activity-logs-container");
 
 for (const btn of completeButtons) {
     btn.addEventListener("click", function() {
@@ -32,6 +33,13 @@ for (const btn of completeButtons) {
         }
         changeValueById("task-complete-count", totalTaskCompleted);
         changeValueById("task-remaining", taskRemaining);
+
+        const div = document.createElement("div");
+        div.classList.add("p-3", "bg-secondary", "rounded-lg");
+        div.innerHTML = `
+            <p class="text-black opacity-70">You have Completed The Task ${cardTitle} at ${new Date().toLocaleTimeString()}</p>        
+        `;
+        activityLogsContainer.appendChild(div);
         btn.setAttribute("disabled", true);
     });
 }
